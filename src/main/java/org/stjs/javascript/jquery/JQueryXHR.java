@@ -5,8 +5,8 @@ import org.stjs.javascript.annotation.SyntheticType;
 
 @SyntheticType
 public abstract class JQueryXHR extends XMLHttpRequest {
-	String responseText;
-	String responseXML;
+	public String responseText;
+	public String responseXML;
 
 	@Override
 	abstract public String getResponseHeader(String header);
