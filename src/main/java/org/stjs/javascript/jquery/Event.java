@@ -71,15 +71,15 @@ abstract public class Event {
 
 	public DOMEvent originalEvent;
 
-	abstract public boolean isDefaultPrevented();
+	public native boolean isDefaultPrevented();
 
-	abstract public boolean isImmediatePropagationStopped();
+	public native boolean isImmediatePropagationStopped();
 
-	abstract public boolean isPropagationStopped();
+	public native boolean isPropagationStopped();
 
-	abstract public void preventDefault();
+	public native void preventDefault();
 
-	abstract public void stopImmediatePropagation();
+	public native void stopImmediatePropagation();
 
-	abstract public void stopPropagation();
+	public native void stopPropagation();
 }

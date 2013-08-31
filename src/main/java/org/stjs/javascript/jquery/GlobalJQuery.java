@@ -26,8 +26,12 @@ import org.stjs.javascript.functions.Function2;
 
 @GlobalScope
 @SyntheticType
-abstract public class GlobalJQuery {
+public final class GlobalJQuery {
 	public static GlobalJQuery $;
+
+	private GlobalJQuery() {
+		//
+	}
 
 	public int active;
 
@@ -38,55 +42,47 @@ abstract public class GlobalJQuery {
 	/**
 	 * jquery constructors
 	 */
-	public static <FullJQuery extends JQueryCore<?>> FullJQuery $(String path) {
-		return null;
-	}
+	public native static <FullJQuery extends JQueryCore<?>> FullJQuery $(String path);
 
-	public static <FullJQuery extends JQueryCore<?>> FullJQuery $(String path, Object context) {
-		return null;
-	}
+	public native static <FullJQuery extends JQueryCore<?>> FullJQuery $(String path, Object context);
 
-	public static <FullJQuery extends JQueryCore<?>> FullJQuery $(Object path) {
-		return null;
-	}
+	public native static <FullJQuery extends JQueryCore<?>> FullJQuery $(Object path);
 
-	abstract public <FullJQuery extends JQueryCore<?>> void each(JQueryCore<FullJQuery> collection,
+	public native <FullJQuery extends JQueryCore<?>> void each(JQueryCore<FullJQuery> collection,
 			Callback2<Integer, Element> elementIterationFunction);
 
-	abstract public JQueryXHR ajax(AjaxParams params);
+	public native JQueryXHR ajax(AjaxParams params);
 
-	abstract public void ajaxSetup(Map<String, ? extends Object> options);
+	public native void ajaxSetup(Map<String, ? extends Object> options);
 
-	abstract public void get(String url, Object params, Callback3<Object, String, JQueryXHR> successListener,
-			String mode);
+	public native void get(String url, Object params, Callback3<Object, String, JQueryXHR> successListener, String mode);
 
-	abstract public void getJSON(String url, Object params,
-			Callback3<? extends Object, String, JQueryXHR> successListener);
+	public native void getJSON(String url, Object params, Callback3<? extends Object, String, JQueryXHR> successListener);
 
-	abstract public <C, E, R> Array<R> map(C collection, Function2<E, Integer, R> callback);
+	public native <C, E, R> Array<R> map(C collection, Function2<E, Integer, R> callback);
 
-	abstract public <T> int inArray(T element, Array<T> registeredListeners);
+	public native <T> int inArray(T element, Array<T> registeredListeners);
 
-	abstract public <E> void each(Array<E> collection, Callback2<Integer, E> elementIterationFunction);
+	public native <E> void each(Array<E> collection, Callback2<Integer, E> elementIterationFunction);
 
-	abstract public <K extends String, V> void each(Map<K, V> collection, Callback2<K, V> elementIterationFunction);
+	public native <K extends String, V> void each(Map<K, V> collection, Callback2<K, V> elementIterationFunction);
 
-	abstract public String trim(String obj);
+	public native String trim(String obj);
 
-	abstract public <K extends String, V> Map<K, V> extend(Map<?, ?> target, Map<?, ?>... objects);
+	public native <K extends String, V> Map<K, V> extend(Map<?, ?> target, Map<?, ?>... objects);
 
-	abstract public <T> T extend(T target, T src);
+	public native <T> T extend(T target, T src);
 
-	abstract public <T> T extend(T target, T src1, T... extraSrc);
+	public native <T> T extend(T target, T src1, T... extraSrc);
 
-	abstract public <T> T extend(boolean deep, T target, T src);
+	public native <T> T extend(boolean deep, T target, T src);
 
-	abstract public <T> T extend(boolean deep, T target, T src1, T... extraSrc);
+	public native <T> T extend(boolean deep, T target, T src1, T... extraSrc);
 
-	abstract public <K extends String, V> Map<K, V> extend(boolean deep, Map<K, V> target, Map<K, V>... objects);
+	public native <K extends String, V> Map<K, V> extend(boolean deep, Map<K, V> target, Map<K, V>... objects);
 
-	abstract public <T> T parseJSON(String message);
+	public native <T> T parseJSON(String message);
 
-	abstract public boolean isArray(Object value);
+	public native boolean isArray(Object value);
 
 }
