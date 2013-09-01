@@ -55,6 +55,7 @@ abstract public class Event {
 	public Element target;
 	public Element relatedTarget;
 	public Element currentTarget;
+	public Element delegateTarget;
 	public int pageX;
 	public int pageY;
 	public int which;

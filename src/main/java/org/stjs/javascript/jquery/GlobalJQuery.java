@@ -20,18 +20,15 @@ import org.stjs.javascript.Map;
 import org.stjs.javascript.annotation.GlobalScope;
 import org.stjs.javascript.annotation.SyntheticType;
 import org.stjs.javascript.dom.Element;
+import org.stjs.javascript.functions.Callback1;
 import org.stjs.javascript.functions.Callback2;
 import org.stjs.javascript.functions.Callback3;
 import org.stjs.javascript.functions.Function2;
 
 @GlobalScope
 @SyntheticType
-public final class GlobalJQuery {
+abstract public class GlobalJQuery {
 	public static GlobalJQuery $;
-
-	private GlobalJQuery() {
-		//
-	}
 
 	public int active;
 
@@ -55,9 +52,11 @@ public final class GlobalJQuery {
 
 	public native void ajaxSetup(Map<String, ? extends Object> options);
 
-	public native void get(String url, Object params, Callback3<Object, String, JQueryXHR> successListener, String mode);
+	public native JQueryXHR get(String url, Object params, Callback3<Object, String, JQueryXHR> successListener,
+			String mode);
 
-	public native void getJSON(String url, Object params, Callback3<? extends Object, String, JQueryXHR> successListener);
+	public native JQueryXHR getJSON(String url, Object params,
+			Callback3<? extends Object, String, JQueryXHR> successListener);
 
 	public native <C, E, R> Array<R> map(C collection, Function2<E, Integer, R> callback);
 
@@ -85,4 +84,21 @@ public final class GlobalJQuery {
 
 	public native boolean isArray(Object value);
 
+	public native boolean isNumeric(Object value);
+
+	public native Callbacks Callbacks();
+
+	public native Callbacks Callbacks(String flags);
+
+	public native Deferred Deferred();
+
+	public native Deferred Deferred(Callback1<Deferred> beforeStart);
+
+	public native Promise when(Object... deferreds);
+
+	public native Array<Element> parseHTML(String text);
+
+	public native Array<Element> parseHTML(String text, Element context);
+
+	public native Array<Element> parseHTML(String text, Element context, boolean keepScripts);
 }

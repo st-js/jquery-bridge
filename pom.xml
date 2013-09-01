@@ -4,7 +4,7 @@
 
 	<groupId>org.st-js.bridge</groupId>
 	<artifactId>jquery</artifactId>
-	<version>1.6.1.1-SNAPSHOT</version>
+	<version>1.9.1.bv0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>Strongly-typed Javascript:JQuery Bridge Library</name>
 
@@ -21,7 +21,7 @@
 		<dependency>
 			<groupId>org.st-js.bridge</groupId>
 			<artifactId>html</artifactId>
-			<version>4.01.0</version>
+			<version>5.0.bv0-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 

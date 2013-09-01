@@ -1,21 +1,9 @@
 package org.stjs.javascript.jquery;
 
 import org.stjs.javascript.Array;
-import org.stjs.javascript.XMLHttpRequest;
-import org.stjs.javascript.annotation.SyntheticType;
 import org.stjs.javascript.functions.CallbackOrFunction;
 
-@SyntheticType
-public abstract class JQueryXHR extends XMLHttpRequest {
-	public String responseText;
-	public String responseXML;
-
-	@Override
-	public native String getResponseHeader(String header);
-
-	public native void overrideMimeType(String type);
-
-	// copy the methods from Promise as in Java we cannot have multiple inheritence
+public class Promise {
 	public native Promise always(CallbackOrFunction... callbacks);
 
 	public native Promise always(Array<? extends CallbackOrFunction>... callbacks);
