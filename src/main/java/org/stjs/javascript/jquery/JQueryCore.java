@@ -18,6 +18,7 @@ package org.stjs.javascript.jquery;
 import org.stjs.javascript.Array;
 import org.stjs.javascript.Map;
 import org.stjs.javascript.annotation.SyntheticType;
+import org.stjs.javascript.annotation.Template;
 import org.stjs.javascript.dom.Element;
 import org.stjs.javascript.functions.Callback1;
 import org.stjs.javascript.functions.Callback2;
@@ -230,6 +231,9 @@ public interface JQueryCore<FullJQuery extends JQueryCore<?>> {
 
 	/************* core ***************/
 	public Element get(int index);
+
+	@Template("get")
+	public Element $get(int index);
 
 	public Element[] get();
 
