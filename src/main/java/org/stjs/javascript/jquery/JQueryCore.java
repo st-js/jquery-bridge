@@ -342,12 +342,6 @@ public interface JQueryCore<FullJQuery extends JQueryCore<?>> {
 
 	public FullJQuery delegate(String selector, Map<String, EventHandler> handlers);
 
-	public FullJQuery die();
-
-	public FullJQuery die(String eventType);
-
-	public FullJQuery die(Map<String, EventHandler> handlers);
-
 	public FullJQuery error(EventHandler handler);
 
 	public FullJQuery focus(EventHandler handler);
@@ -373,12 +367,6 @@ public interface JQueryCore<FullJQuery extends JQueryCore<?>> {
 	public FullJQuery keyup();
 
 	public FullJQuery keyup(EventHandler handler);
-
-	public FullJQuery live(String eventType, EventHandler handler);
-
-	public FullJQuery live(String eventType, Map<String, Object> eventData, EventHandler handler);
-
-	public FullJQuery live(Map<String, EventHandler> handlers);
 
 	public FullJQuery load(EventHandler handler);
 
@@ -717,9 +705,6 @@ public interface JQueryCore<FullJQuery extends JQueryCore<?>> {
 
 	// since 1.0
 	public int length = 0;
-
-	// since 1.3
-	public String selector = "";
 
 	// since 1.0
 	public String version = "";
