@@ -29,7 +29,7 @@
 		<connection>scm:git:http://github.com/st-js/jquery-bridge.git</connection>
 		<developerConnection>scm:git:http://github.com/st-js/jquery-bridge.git</developerConnection>
 		<url>scm:git:https://github.com/st-js/jquery-bridge</url>
-	  <tag>jquery-1.6.1.0</tag>
+	  <tag>HEAD</tag>
   	</scm>
 
 </project>
