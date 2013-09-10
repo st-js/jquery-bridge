@@ -17,8 +17,6 @@ package org.stjs.javascript.jquery;
 
 import org.stjs.javascript.annotation.GlobalScope;
 import org.stjs.javascript.annotation.SyntheticType;
-import org.stjs.javascript.dom.Element;
-import org.stjs.javascript.functions.Callback2;
 
 @GlobalScope
 @SyntheticType
@@ -33,8 +31,5 @@ public final class GlobalJQuery {
 	public native static <FullJQuery extends JQueryCore<?>> FullJQuery $(String path, Object context);
 
 	public native static <FullJQuery extends JQueryCore<?>> FullJQuery $(Object path);
-
-	public native <FullJQuery extends JQueryCore<?>> void each(JQueryCore<FullJQuery> collection,
-			Callback2<Integer, Element> elementIterationFunction);
 
 }
