@@ -21,7 +21,7 @@
 		<dependency>
 			<groupId>org.st-js.bridge</groupId>
 			<artifactId>html</artifactId>
-			<version>4.01.0</version>
+			<version>4.01.bv0</version>
 		</dependency>
 	</dependencies>
 
