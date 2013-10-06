@@ -26,8 +26,8 @@
 	</dependencies>
 
 	<scm>
-		<connection>scm:git:http://github.com/st-js/jquery-bridge.git</connection>
-		<developerConnection>scm:git:http://github.com/st-js/jquery-bridge.git</developerConnection>
+		<connection>scm:git:https://github.com/st-js/jquery-bridge.git</connection>
+		<developerConnection>scm:git:https://github.com/st-js/jquery-bridge.git</developerConnection>
 		<url>scm:git:https://github.com/st-js/jquery-bridge</url>
 	  <tag>HEAD</tag>
   	</scm>
