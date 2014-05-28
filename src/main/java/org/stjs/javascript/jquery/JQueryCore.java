@@ -443,7 +443,9 @@ public interface JQueryCore<FullJQuery extends JQueryCore<?>> {
 
 	public FullJQuery trigger(String eventType);
 
-	public FullJQuery trigger(String eventType, Map<String, String> extraParams);
+	public FullJQuery trigger(String eventType, Array<? extends Object> extraParams);
+
+	public FullJQuery trigger(String eventType, Map<String, ? extends Object> extraParams);
 
 	public FullJQuery trigger(Event event);
 
