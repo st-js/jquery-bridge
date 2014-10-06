@@ -708,12 +708,15 @@ public interface JQueryCore<FullJQuery extends JQueryCore<?>> {
 	/************* properties ***************/
 
 	// since 1.3
-	public Element context = null;
+	@Template("toProperty")
+	public Element context();
 
 	// since 1.0
-	public int length = 0;
+	@Template("toProperty")
+	public int length();
 
 	// since 1.0
-	public String version = "";
+	@Template("toProperty")
+	public String version();
 
 }
