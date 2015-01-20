@@ -33,7 +33,11 @@ public class JQueryNamespace {
 
 	public native JQueryXHR getJSON(String url, Object params, Callback3<? extends Object, String, JQueryXHR> successListener);
 
-	public native <C, E, R> Array<R> map(C collection, Function2<E, Integer, R> callback);
+	public native <E, R> Array<R> map(Array<E> collection, Function2<E, Integer, R> callback);
+
+	public native <E, R> Array<R> map(Map<String, E> collection, Function2<E, String, R> callback);
+
+	public native <R> Array<R> map(Object object, Function2<Object, Integer, R> callback);
 
 	public native <T> int inArray(T element, Array<T> registeredListeners);
 
