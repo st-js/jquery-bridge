@@ -199,7 +199,4 @@ public class AjaxParams {
 	 * An object of fieldName-fieldValue pairs to set on the native XHR object. For example, you can use it to set withCredentials to true for cross-domain requests if needed. In jQuery 1.5, the withCredentials property was not propagated to the native XHR and thus CORS requests requiring it would ignore this flag. For this reason, we recommend using jQuery 1.5.1+ should you require the use of it. (version added: 1.5.1)
 	 */
 	public Map<String, Object> xhrFields;
-	
-	public AjaxParams() {
-    	}
 }
