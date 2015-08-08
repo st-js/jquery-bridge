@@ -21,13 +21,12 @@ public class JQueryNamespace {
 	public int active;
 	public int isReady;
 
-	public Browser browser;
-
 	public Object fn;
 
 	/**
 	 * List of supported features
 	 */
+    @Deprecated
 	public Support support;
 
 	public AjaxParams ajaxSettings;
