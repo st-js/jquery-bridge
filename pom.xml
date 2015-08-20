@@ -4,7 +4,7 @@
 
 	<groupId>org.st-js.bridge</groupId>
 	<artifactId>jquery</artifactId>
-	<version>1.11.3.bv1-SNAPSHOT</version>
+	<version>1.11.3.bv1</version>
 	<packaging>jar</packaging>
 	<name>Strongly-typed Javascript:JQuery Bridge Library</name>
 
@@ -41,7 +41,7 @@
 		<connection>scm:git:https://github.com/st-js/jquery-bridge.git</connection>
 		<developerConnection>scm:git:https://github.com/st-js/jquery-bridge.git</developerConnection>
 		<url>scm:git:https://github.com/st-js/jquery-bridge</url>
-	  <tag>HEAD</tag>
+	  <tag>jquery-1.11.3.bv1</tag>
   	</scm>
 
 </project>
